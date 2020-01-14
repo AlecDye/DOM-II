@@ -43,9 +43,9 @@ colorCopy.addEventListener('copy', (event) => {
     event.preventDefault();
 })
 // #8 Mouse Up (all buttons)
-const buttonSize = document.querySelectorAll(".btn").forEach(e => {
-    e.addEventListener("mouseup", () => {
-        e.style.transform = 'scale(2)';
+const buttonSize = document.querySelectorAll(".btn").forEach(event => {
+    event.addEventListener('mouseup', () => {
+        event.style.transform = 'scale(2)';
     })
 });
 // #9 Mouse Down & Stop Propagation
@@ -64,3 +64,10 @@ const newBanner = document.querySelector('img');
 window.addEventListener('resize', () => {
     newBanner.src = 'https://images.unsplash.com/photo-1465172018141-c4e4fa823289?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80';
 });
+
+// #11 Kill nav links
+const nav = document.querySelectorAll('a').forEach(event => {
+    event.addEventListener('click', event => {
+        event.preventDefault();
+    })
+})
