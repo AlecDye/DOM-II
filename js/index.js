@@ -18,8 +18,9 @@ const smallBus = document.querySelector('img');
 window.addEventListener('resize', () => {
     smallBus.src = 'https://images.unsplash.com/photo-1569135218372-6f7f6f3d7e55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80';
 });
-// #4 --- Clink ---
+// #4 --- Click ---
 const buttonElement = document.querySelector('.btn');
 buttonElement.addEventListener('click', (event) => {
     alert('You pressed the leftmost button!');
 })
+// #5 ---  ---
